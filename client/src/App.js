@@ -1,11 +1,12 @@
-import React from 'react';
-import EntryViewer from './components/EntryViewer'
+import React, { useState } from 'react';
+import Entrance from './components/views'
 import './App.css';
 
 function App() {
+  const [state, setState] = useState([]);
   return (
     <div className="App">
-      <EntryViewer state={state} setState={setState} />
+      <Entrance state={state} setState={setState} />
     </div>
   );
 }

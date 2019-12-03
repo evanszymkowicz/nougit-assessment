@@ -1,19 +1,19 @@
 import React from 'react'
-import {Card, CardBody, CardHeader, CardFooter} from 'reactstrap'
-import EntryHeader from './EntryHeader'
-import Pledges from './pledges'
+import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap'
+import Header from './header'
+import DonationCard from './donations'
 import { FaRegComment } from "react-icons/fa";
 
 const StartCard = ({ data }) => {
   return (
     <Card className="mb-4 text-left">
       <CardHeader>
-        <EntryHeader author={data.author} />
+        <Header author={data.author} />
       </CardHeader>
       <CardBody >
-      <h6 className="font-size-16">{data.title}</h6>
-      <h6 className="font-size-14 text-muted mt-1 mb-2">{data.description}</h6>
-      <Pledges
+      <h7 className="font-size-16">{data.title}</h7>
+      <h7 className="font-size-14 text-muted mt-1 mb-2">{data.description}</h7>
+      <DonationCard
         thumbnail={data.thumbnail}
         goal={data.pledgeGoal}
         total={data.pledgeTotal}
@@ -24,7 +24,7 @@ const StartCard = ({ data }) => {
       <CardFooter>
         <div className="d-flex align-items-center">
           <FaRegComment color="" />
-            <h6 className="font-size-14 text-muted ml-2"> comments({data.numComments})</h6>
+            <h7 className="font-size-14 text-muted ml-2"> comments({data.numComments})</h7>
         </div>
       </CardFooter>
     </Card>

@@ -24,7 +24,7 @@ export const GET_ENTRIES = gql `
   }
 `;
 
-export default function EntryViewer(props) {
+export default function Entrance(props) {
 
   const [loadMore, setLoadMore] = useState(true);
   const [page, setPage] = useState(1)
