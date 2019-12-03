@@ -20,3 +20,25 @@
 .App-link {
   color: #09d3ac;
 }
+
+img {
+  width: 80px;
+  border-radius: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+.font-size-16 {
+  font-size: 1rem;
+}
+
+.font-size-14 {
+  font-size: .8rem;
+}
