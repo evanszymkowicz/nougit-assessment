@@ -1,0 +1,21 @@
+{
+  "name": "ews-nougit-submission",
+  "version": "1.0.0",
+  "description": "nougit submission",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanszymkowicz/nougit-assessment.git"
+  },
+  "author": "Evan Szymkowicz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanszymkowicz/nougit-assessment/issues"
+  },
+  "homepage": "https://github.com/evanszymkowicz/nougit-assessment#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
