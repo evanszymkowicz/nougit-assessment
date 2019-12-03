@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import gql from 'graphql-tag';
 import { useLazyQuery } from '@apollo/react-hooks';
 import { Row, Col } from 'reactstrap';
+import StartCard from "./card";
+import Filter from "./filter"
 
 export const GET_ENTRIES = gql `
   query getEntries($page: Int, $limit: Int, $sort: String, $isTrending: Boolean, $status: Int){
@@ -158,7 +160,7 @@ export default function Entrance(props) {
           <li key={index}>
               <Row>
                 <Col sm="12" md={{ size: 4, offset: 4 }}>
-                  <EntryCard data={entry}  />
+                  <StartCard data={entry}  />
                 </Col>
               </Row>
           </li>

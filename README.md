@@ -4,7 +4,7 @@
 
 ### Part 1: </br>
 
-    Build a GraphQL API that pulls values from the data provided in entries.json.  </br>  
+    Build a GraphQL API that pulls values from the data provided in entries.json.
 
 ### Part 2: </br>
 
